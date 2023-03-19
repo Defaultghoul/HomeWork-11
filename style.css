@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+body { 
+	background-color: rgba(122, 60, 122, 0.829);
+}
+
+.container {
+	min-height: 300px;
+	width: 175px;
+	margin: 15px;
+
+	border: 2px solid black;
+	box-shadow: inset 0px 0px 14px 200px rgba(59, 52, 59, 0.219);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.Subitem {
+	position: absolute;
+
+	left: 172px;
+	top: 0px;
+	display: none;
+
+	width: 175px;
+	height: 150px;
+
+
+	text-align: center;
+
+
+	box-shadow: inset 0px 0px 14px 200px rgba(59, 52, 59, 0.219);
+
+}
+
+.menu-item {
+ position: relative; 
+	padding: 15px;
+	font-size: 25px;
+	color: #ffffff;
+}
+
+.menu-item:hover {
+	box-shadow: inset 0px 0px 14px 200px rgba(59, 52, 59, 0.219);
+}
+
+.menu-item:hover .Subitem {
+	display: block;
+}
+
+
+.Subitem p:hover {
+	box-shadow: inset 0px 0px 14px 200px rgba(59, 52, 59, 0.219);
+}
+
+.Subitem p:nth-of-type(1) {
+	padding-top: 15px;
+}
+
+.Subitem p:nth-of-type(2) {
+	 padding-top: 15px; 
+	 padding-bottom: 15px;
+}
+
+.Subitem p:nth-of-type(3) {
+	padding-bottom: 15px;
+}
